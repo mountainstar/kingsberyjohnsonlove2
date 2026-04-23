@@ -1,0 +1,12 @@
+/* KJ&L — split stylesheets (edit files under css/) */
+@import url("./css/tokens.css");
+@import url("./css/base.css");
+@import url("./css/app-bar.css");
+@import url("./css/hero.css");
+@import url("./css/about.css");
+@import url("./css/footer.css");
+@import url("./css/practice-strip.css");
+@import url("./css/pages-inner.css");
+@import url("./css/pages-profile.css");
+@import url("./css/reduced-motion.css");
+@import url("./css/wade-inspired-home.css");
