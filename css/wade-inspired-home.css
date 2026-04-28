@@ -225,7 +225,7 @@
     rgba(45, 107, 82, 0.86)
   );
   color: var(--cream);
-  padding: 5rem 0 3.5rem;
+  padding: 4rem 0 2.8rem;
   position: relative;
   overflow: clip;
   z-index: 1;
@@ -394,6 +394,7 @@
   border: 1px solid var(--cream-dark);
   border-radius: 12px;
   padding: 1rem;
+  text-transform: capitalize;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
@@ -482,6 +483,7 @@
   justify-content: space-between;
   align-items: baseline;
   gap: 0.85rem;
+  height: 3.75rem;
 }
 
 .wa-team__head a,
@@ -492,7 +494,7 @@
 .wa-team ul {
   list-style: none;
   padding: 0;
-  margin: 1.25rem 0 0;
+  margin: 0.75rem 0 0;
   display: grid;
   gap: 0.7rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

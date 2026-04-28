@@ -29,28 +29,8 @@
   }
 
   if (document.body.classList.contains("wa-body")) {
-    const bgImages = [
-      "../assets/backgrounds/IMG_2427.jpeg",
-      "../assets/backgrounds/0BE4F229-8DEA-4A7B-B656-8175E02470D7_1_102_o.jpeg",
-      "../assets/backgrounds/CFC3D725-FBB1-4C4D-B61E-737C0C8EABCB_1_102_o.jpeg",
-      "../assets/backgrounds/36E6F0E5-416A-4098-9176-2BB34273A6AA_1_102_o.jpeg",
-      "../assets/backgrounds/5D607643-8FF2-4ABD-AB7F-9721DB3B9D54_4_5005_c.jpeg",
-      "../assets/backgrounds/88E18DE9-E115-4AE8-A25A-DDB24882A6ED_4_5005_c.jpeg",
-      "../assets/backgrounds/8F0390AB-3101-4B6B-99AC-8B5F12753CF1_4_5005_c.jpeg",
-      "../assets/backgrounds/AC0CA52C-04EA-43B3-854D-94C0A44F4D1F_4_5005_c.jpeg"
-    ];
-
-    const storageKey = "wa-last-bg-index";
-    const lastIdx = parseInt(window.sessionStorage.getItem(storageKey) || "-1", 10);
-    let nextIdx = Math.floor(Math.random() * bgImages.length);
-
-    // Avoid immediate repeats when multiple backgrounds are available.
-    if (bgImages.length > 1 && nextIdx === lastIdx) {
-      nextIdx = (nextIdx + 1) % bgImages.length;
-    }
-
-    window.sessionStorage.setItem(storageKey, String(nextIdx));
-    document.body.style.setProperty("--wa-bg-image", 'url("' + bgImages[nextIdx] + '")');
+    const homeBackgroundImage = "../assets/backgrounds/IMG_2427.jpeg";
+    document.body.style.setProperty("--wa-bg-image", 'url("' + homeBackgroundImage + '")');
   }
 
   if (parallaxBg && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
