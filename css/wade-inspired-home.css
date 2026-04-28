@@ -270,10 +270,18 @@
 }
 
 .wa-eyebrow {
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  opacity: 0.9;
+  color: var(--white);
+  background: rgba(246, 243, 238, 0.16);
+  border: 1px solid rgba(246, 243, 238, 0.45);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  box-shadow: 0 8px 20px rgba(20, 26, 23, 0.22);
+  opacity: 1;
 }
 
 .wa-hero h1,
